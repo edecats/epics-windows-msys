@@ -1,0 +1,11 @@
+# CMake
+cmake-build-*/
+
+# Visual Studio Code
+*.vscode
+
+# macOS
+.DS_Store
+
+# Temp
+rootpw.txt

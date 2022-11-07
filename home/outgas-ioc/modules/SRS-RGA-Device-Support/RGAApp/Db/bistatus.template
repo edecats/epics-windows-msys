@@ -1,0 +1,6 @@
+record(bi, "$(DEVICE)_$(NAME)_RB") {
+    field(DESC, "$(DESC)")
+    field(ZNAM, "No Fault")
+    field(ONAM, "Fault") 
+    field(INP, "$(DEVICE)_$(INP) CP")
+}

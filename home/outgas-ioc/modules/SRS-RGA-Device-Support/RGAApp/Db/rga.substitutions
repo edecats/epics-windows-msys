@@ -1,0 +1,48 @@
+file stringin.template {
+    pattern { NAME,                   DESC,                                     PROTONAME       }
+            { "ModelNumber",          "send unit model number",                 "getModelNumber"}
+}
+
+file bocmd.template {
+    pattern { NAME,                   DESC,                                     PROTONAME       }
+            { "ResetDevice",          "reset device communications",            "setResetDevice"}
+            { "Calibrate",          "Readjust the zero of the detector for clean baseline and update the internal scan parameters. ",   "setRunCalibration"}
+            {"TriggerMassMeasurement", "read a single mass measurement",  "setTriggerMassMeasurement"}
+}
+
+file aisoft.template {
+    pattern { NAME,                   DESC                                 , EGU}
+            { "MeasurementAMU_SET",      "Set the rate and detection limit for ion current measurements" , 'amu'}
+            {"SingleMassMeasurement_RB", "read a single mass measurement", 'A' }
+}
+
+
+file ai.template {
+    pattern { NAME,                   DESC,                                     PROTONAME,              LOPR, HOPR, EGU }
+            { "FilamentCurrent",      "read filament current in milliamps",     "getFilamentCurrent",   0.00, 3.5,  'mA'}
+            {"PartialPressureConversion", "Partial Pressure Sensitivity Factor storage and query.", "getPartialPressureConversion", 0.0, 10.0, 'mA/Torr'}
+}
+
+file ao.template {
+    pattern { NAME,                   DESC,                                     PROTONAME,              DRVL, DRVH, EGU }
+            { "FilamentCurrent",      "set filament current in milliamps",      "setFilamentCurrent",   0.00, 3.5,  'mA'}
+}
+
+
+
+file int64in.template {
+    pattern { NAME,                   DESC,                                     PROTONAME,              }
+            { "NoiseFloor",      "Get the rate and detection limit for ion current measurements",     "getNoiseFloor"}
+}
+
+file int64out.template {
+    pattern { NAME,                   DESC,                                     PROTONAME,              DRVL, DRVH, EGU }
+            { "NoiseFloor",      "Set the rate and detection limit for ion current measurements",     "setNoiseFloor",   0, 7}
+}
+
+
+file calc.template {
+    pattern { NAME, INPA, INPB, CALC, DESC}
+           { "PartialPressureScaled", "rga_SingleMassMeasurement_RB", "rga_PartialPressureConversion_RB", "(A*10^-13)/B", "Scaled partial pressure"}
+           
+}

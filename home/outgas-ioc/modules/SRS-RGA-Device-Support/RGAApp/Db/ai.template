@@ -1,0 +1,11 @@
+
+record(ai, "$(DEVICE)_$(NAME)_RB") {
+    field(DESC, "$(DESC)")
+    field(SCAN, "$(SCAN_FAST)")
+    field(DTYP, "stream")
+    field(INP, "@rga_protocols.proto $(PROTONAME) $(PORT)") 
+
+    field(HOPR, "$(HOPR)")
+    field(LOPR, "$(LOPR)")
+    field(EGU, "$(EGU)")
+}

@@ -1,0 +1,14 @@
+record(stringin, "$(DEVICE)_ModelNumber_RB") {
+    field(DESC, "send unit model number")
+    field(SCAN, "$(SCAN_SLOW)")
+    field(DTYP, "stream")
+    field(INP, "@tpg_protocols.proto getModelNumber $(PORT)") 
+}
+record(ai, "$(DEVICE)_GaugePressure1_RB") {
+    field(DESC, "report gauge press 1")
+    field(SCAN, "$(SCAN_FAST)")
+    field(DTYP, "stream")
+    field(INP, "@tpg_protocols.proto getGaugePressure1 $(PORT)") 
+    field(EGU, "Torr")
+    field(STAT, 0)
+}

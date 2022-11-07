@@ -1,0 +1,8 @@
+RGA = $(RB_MODULES)/SRS-RGA-Device-Support
+PFEIFFER = $(RB_MODULES)/Pfeiffer-Controller-Device-Support
+
+# These lines allow developers to override these RELEASE settings
+# without having to modify this file directly.
+-include $(TOP)/../../RELEASE.local
+-include $(TOP)/../../RELEASE.$(EPICS_HOST_ARCH).local
+-include $(TOP)/configure/RELEASE.local

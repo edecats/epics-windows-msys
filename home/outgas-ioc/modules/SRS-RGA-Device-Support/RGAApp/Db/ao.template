@@ -1,0 +1,12 @@
+
+record(ao, "$(DEVICE)_$(NAME)_SET") {
+    field(DESC, "$(DESC)")
+    field(SCAN, "Passive")
+    field(VAL, "0")
+    field(DTYP, "stream")
+    field(OUT, "@rga_protocols.proto $(PROTONAME) $(PORT)") 
+
+    field(DRVH, "$(DRVH)")
+    field(DRVL, "$(DRVL)")
+    field(EGU, "$(EGU)")
+}

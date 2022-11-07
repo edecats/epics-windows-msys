@@ -1,0 +1,82 @@
+record(stringin, "$(DEVICE)_ModelNumber_RB") {
+    field(DESC, "send unit model number")
+    field(SCAN, "$(SCAN_SLOW)")
+    field(DTYP, "stream")
+    field(INP, "@rga_protocols.proto getModelNumber $(PORT)") 
+}record(bo, "$(DEVICE)_ResetDevice_SET") {
+    field(DESC, "reset device communications")
+    field(SCAN, "Passive")
+    field(DTYP, "stream")
+    field(OUT, "@rga_protocols.proto setResetDevice $(PORT)") 
+}record(bo, "$(DEVICE)_Calibrate_SET") {
+    field(DESC, "Readjust the zero of the detector for clean baseline and update the internal scan parameters. ")
+    field(SCAN, "Passive")
+    field(DTYP, "stream")
+    field(OUT, "@rga_protocols.proto setRunCalibration $(PORT)") 
+}record(bo, "$(DEVICE)_TriggerMassMeasurement_SET") {
+    field(DESC, "read a single mass measurement")
+    field(SCAN, "Passive")
+    field(DTYP, "stream")
+    field(OUT, "@rga_protocols.proto setTriggerMassMeasurement $(PORT)") 
+}
+record(ai, "$(DEVICE)_MeasurementAMU_SET") {
+    field(DESC, "Set the rate and detection limit for ion current measurements")
+    field(SCAN, "Passive")
+    field(EGU, amu)
+}
+record(ai, "$(DEVICE)_SingleMassMeasurement_RB") {
+    field(DESC, "read a single mass measurement")
+    field(SCAN, "Passive")
+    field(EGU, A)
+}
+record(ai, "$(DEVICE)_FilamentCurrent_RB") {
+    field(DESC, "read filament current in milliamps")
+    field(SCAN, "$(SCAN_FAST)")
+    field(DTYP, "stream")
+    field(INP, "@rga_protocols.proto getFilamentCurrent $(PORT)") 
+
+    field(HOPR, "3.5")
+    field(LOPR, "0.00")
+    field(EGU, "mA")
+}
+record(ai, "$(DEVICE)_PartialPressureConversion_RB") {
+    field(DESC, "Partial Pressure Sensitivity Factor storage and query.")
+    field(SCAN, "$(SCAN_FAST)")
+    field(DTYP, "stream")
+    field(INP, "@rga_protocols.proto getPartialPressureConversion $(PORT)") 
+
+    field(HOPR, "10.0")
+    field(LOPR, "0.0")
+    field(EGU, "mA/Torr")
+}
+record(ao, "$(DEVICE)_FilamentCurrent_SET") {
+    field(DESC, "set filament current in milliamps")
+    field(SCAN, "Passive")
+    field(VAL, "0")
+    field(DTYP, "stream")
+    field(OUT, "@rga_protocols.proto setFilamentCurrent $(PORT)") 
+
+    field(DRVH, "3.5")
+    field(DRVL, "0.00")
+    field(EGU, "mA")
+}record(int64in, "$(DEVICE)_NoiseFloor_RB") {
+    field(DESC, "Get the rate and detection limit for ion current measurements")
+    field(SCAN, "$(SCAN_FAST)")
+    field(DTYP, "stream")
+    field(INP, "@rga_protocols.proto getNoiseFloor $(PORT)") 
+}record(int64out, "$(DEVICE)_NoiseFloor_SET") {
+    field(DESC, "Set the rate and detection limit for ion current measurements")
+    field(SCAN, "Passive")
+    field(DTYP, "stream")
+    field(OUT, "@rga_protocols.proto setNoiseFloor $(PORT)") 
+    field(DRVH, "7")
+    field(DRVL, "0")
+}
+record(calc, "$(DEVICE)_PartialPressureScaled") {
+    field(DESC, "Scaled partial pressure")
+    field(SCAN, "Passive")
+    field(INPA, "rga_SingleMassMeasurement_RB")
+    field(INPB, "rga_PartialPressureConversion_RB")
+    field(CALC, "(A*10^-13)/B")
+    field(SCAN, "$(SCAN_FAST)")
+}

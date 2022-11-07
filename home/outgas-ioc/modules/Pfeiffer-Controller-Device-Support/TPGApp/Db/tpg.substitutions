@@ -1,0 +1,9 @@
+file stringin.template {
+    pattern { NAME,            DESC,                                        PROTONAME      }
+            { "ModelNumber",   "send unit model number",                    "getModelNumber"}
+}
+
+file ai.template {
+    pattern { NAME,            DESC,                           PROTONAME,                      EGU }
+            { "GaugePressure1",          "report gauge press 1", "getGaugePressure1",    "Torr"}
+}

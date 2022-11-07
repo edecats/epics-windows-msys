@@ -1,0 +1,8 @@
+record(int64out, "$(DEVICE)_$(NAME)_SET") {
+    field(DESC, "$(DESC)")
+    field(SCAN, "Passive")
+    field(DTYP, "stream")
+    field(OUT, "@tpg_protocols.proto $(PROTONAME) $(PORT)") 
+    field(DRVH, "$(DRVH)")
+    field(DRVL, "$(DRVL)")
+}

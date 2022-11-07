@@ -1,0 +1,7 @@
+[submodule "modules/SRS-RGA-Device-Support"]
+	path = modules/SRS-RGA-Device-Support
+	url = ../SRS-RGA-Device-Support
+[submodule "modules/Pfeiffer-Controller-Device-Support"]
+	path = modules/Pfeiffer-Controller-Device-Support
+	url = ../Pfeiffer-Controller-Device-Support
+

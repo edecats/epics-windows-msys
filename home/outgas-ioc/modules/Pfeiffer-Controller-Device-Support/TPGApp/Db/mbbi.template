@@ -1,0 +1,7 @@
+#using mbbi so we only use one protocol and store 8 bits that are seperated with "," then each bit stored in different bi.
+record(mbbi, "$(DEVICE)_$(NAME)_RB") {
+    field(DESC, "$(DESC)")
+    field(SCAN, "Passive")
+    field(DTYP, "stream")
+    field(INP, "@tpg_protocols.proto $(PROTONAME) $(PORT)") 
+}

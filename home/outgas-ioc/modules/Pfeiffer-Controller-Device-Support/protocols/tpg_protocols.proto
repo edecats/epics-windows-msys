@@ -1,0 +1,15 @@
+Terminator = CR;
+
+getModelNumber {
+    out "AYT"; #<ARG> = Consists up to fifteen ASCII characters representing the current model number. 
+    in "\x06";
+    out "\x05";
+    in "%s";
+}
+
+getGaugePressure1 {
+    out "PR1";
+    in "\x06";
+    out "\x05";
+    in "%*[\n]0,%f";
+}

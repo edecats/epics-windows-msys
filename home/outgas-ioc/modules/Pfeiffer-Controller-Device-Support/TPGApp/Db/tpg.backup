@@ -1,0 +1,72 @@
+#output templates
+file bo.template {
+    pattern { NAME,             DESC,                           PROTONAME,         ZNAM,       ONAM      }
+            { "EnableSupplies", "enable or disable supplies",   "setOnoffpower",   "Disable",  "Enable" }
+}
+
+file int64out.template {
+    pattern { NAME,             DESC,                                       PROTONAME,         DRVH,   DRVL }
+            { "ArcEvents",      "set events/sec required to get ArcFault",  "setArcFault",     "250",  "0" }
+}
+
+file ao.template {
+    pattern { NAME,             DESC,                                   PROTONAME,            DRVH,   DRVL,   ASLO,                   EGU }      
+            { "MeanCathode",    "set Mean Cathode Current Fault",       "setMeanCathode"      "10",   "0",    "0.0024420024420024",   "mA"}
+            { "PulsedVoltage",  "set Grid Voltage",                     "setPulsedVoltage"    "340",  "0",    "0.083028083028083",    "V"}
+            { "CathodeVoltage", "set Cathode Voltage",                  "setCathodeVoltage"   "15",   "0",    "0.0036630036630037",   "kV"}
+            { "HeaterVoltage",  "set Heater Voltage",                   "setHeaterVoltage",   "6.5",  "0",    "0.0015873015873016",   "V"}
+}
+
+file bocmd.template {
+    pattern { NAME,               DESC,                           PROTONAME      }
+            { "ResetArcCounter",  "reset Arc Counter to zero",    "setResetArcCounter"}
+            { "ResetFaults",      "clear latched faults",         "setResetFaults"}
+}
+
+
+
+#input templates
+file ai.template {
+    pattern { NAME,            DESC,                           PROTONAME,                        HOPR,   LOPR,   ASLO,                   EGU }
+            { "Grid",          "report Grid Voltage setpoint", "getGridPulsedVoltageSetpoint",   "15",   "0",    "0.0036630036630037",   "kV"}
+            { "Heater",        "report Heater Holtage setpoint","getHeaterSetpoint",             "6.5",  "0",    "0.0015873015873016",   "V"}
+            { "InjVoltage",    "report Injector Voltage rb",   "getInjVoltageReadBack",          "15",   "0",    "0.0036630036630037",   "kV"}
+            { "InjCurrent",    "report Injector Current rb",   "getInjCurrentReadBack",          "340",  "0",    "0.083028083028083",    "V"}
+            { "HVpsCurrent",   "report PS Current",            "getHVpowersupply",               "10",   "0",    "0.0024420024420024",   "mA"}
+            { "PsVoltage",     "report PS Voltage",            "getPowersupplyVoltage",          "15",   "0",    "0.0036630036630037",   "kV"}
+            { "GridVoltage",   "report Grid Voltage rb",       "getGridVoltageReadBack",         "150",  "0",    "0.0366300366300366",   "V"}
+            { "HeaterVoltage", "report Heater Voltage rb",     "getHeaterVoltageReadBack",       "6.5",  "0",    "0.0015873015873016",   "V"}
+            { "HeaterCurrent", "report Heater Current rb",     "getHeaterCurrentReadBack",       "3",    "0",    "0.0007326007326007",   "A"}
+            { "PulseVoltage",  "report Grid Voltage rb",       "getGridPulsedVoltageReadBack",    "340",  "0",    "0.083028083028083",    "V"}
+            { "VTrimVoltage",  "report V_Trim Voltage rb",     "getVtrimVoltageReadBack",        "170",  "0",    "0.0415140415140415",   "V"}
+}
+
+file mbbi.template {
+    pattern { NAME,            DESC,                            PROTONAME      }
+            { "StatusFaults",  "report power supply statuses",  "getStatusFaults"}
+}
+
+#StatusFaults each in bi, for easier gui 
+file bistatus.template {
+    pattern { NAME,             DESC,                       INP}
+            { "ACpower",        "AC power supply rb",       "StatusFaults_RB.ZRVL"}
+            { "TriggerPresent", "Trigger present rb",       "StatusFaults_RB.ONVL"}
+            { "ArcFault",       "Arc Fault rb",             "StatusFaults_RB.TWVL"}
+            { "InterlockIn",    "Interlock In rb",          "StatusFaults_RB.THVL"}
+            { "InterlockOut",   "Interlock Out rb",         "StatusFaults_RB.FRVL"}
+            { "CathodeCurrent", "Cathode Current Fault rb", "StatusFaults_RB.FVVL"}
+            { "OverTemp",       "Over Temperature",         "StatusFaults_RB.SXVL"}
+}
+
+file stringin.template {
+    pattern { NAME,            DESC,                                        PROTONAME      }
+            { "DSPSoftware",   "send part&build number of DSPsoftware",     "getDSPSoftware"}
+            { "ModelNumber",   "send unit model number",                    "getModelNumber"}
+            { "EthSoftware",   "send part&build number of EthernetSW",      "getEthSoftPartNum"}
+}
+
+file int64in.template {
+    pattern { NAME,            DESC,                           PROTONAME      }
+            { "ArcProgram",    "report Arc fault threshold",   "getArcProgramSetpoint"}
+            { "ArcCounter",    "report Arc Counter",           "getArcCounterReadBack"}
+}

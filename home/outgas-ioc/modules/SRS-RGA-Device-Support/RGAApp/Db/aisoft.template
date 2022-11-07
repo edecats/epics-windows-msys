@@ -1,0 +1,6 @@
+
+record(ai, "$(DEVICE)_$(NAME)") {
+    field(DESC, "$(DESC)")
+    field(SCAN, "Passive")
+    field(EGU, $(EGU))
+}

@@ -1,0 +1,9 @@
+
+record(ai, "$(DEVICE)_$(NAME)_RB") {
+    field(DESC, "$(DESC)")
+    field(SCAN, "$(SCAN_FAST)")
+    field(DTYP, "stream")
+    field(INP, "@tpg_protocols.proto $(PROTONAME) $(PORT)") 
+    field(EGU, "$(EGU)")
+    field(STAT, 0)
+}

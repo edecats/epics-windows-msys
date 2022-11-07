@@ -1,0 +1,9 @@
+EPICS_BASE=C:/msys64/home/Eloise/base
+MODULES=C:/msys64/home/Eloise/modules
+RB_BASE=C:/msys64/home/outgas-ioc
+RB_MODULES=$(RB_BASE)/modules
+
+ASYN=$(MODULES)/asyn
+STREAM=$(MODULES)/stream
+CALC=$(MODULES)/calc
+

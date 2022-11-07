@@ -1,0 +1,9 @@
+
+record(calc, "$(DEVICE)_$(NAME)") {
+    field(DESC, "$(DESC)")
+    field(SCAN, "Passive")
+    field(INPA, "$(INPA)")
+    field(INPB, "$(INPB)")
+    field(CALC, "$(CALC)")
+    field(SCAN, "$(SCAN_FAST)")
+}

@@ -1,0 +1,53 @@
+Terminator = CR;
+InTerminator = "";
+
+getModelNumber {
+    out "ID?";
+    wait 500;
+    in "%s\n\r";
+}
+
+setResetDevice {
+    out "IN0";
+    in "0\n\r";
+}
+
+setFilamentCurrent {
+    out "FL%f";
+    wait 500;
+    in "0\n\r";
+}
+
+getFilamentCurrent {
+    out "FL?";
+    wait 200;
+    in "%f\n\r";
+}
+
+setRunCalibration {
+    out "CA";
+    wait 1000;
+    in "0\n\r";
+}
+
+setNoiseFloor {
+    out "NF%d";
+}
+
+getNoiseFloor {
+    out "NF?";
+    in "%d\n\r";
+}
+
+getPartialPressureConversion {
+    out "SP?";
+    wait 200;
+    in "%f\n\r";
+}
+
+setTriggerMassMeasurement {
+    out "MR%(rga_MeasurementAMU_SET)f";
+    wait 500;
+    in "%(rga_SingleMassMeasurement_RB)#4r";
+}
+

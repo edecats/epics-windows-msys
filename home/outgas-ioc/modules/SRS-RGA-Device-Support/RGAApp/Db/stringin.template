@@ -1,0 +1,6 @@
+record(stringin, "$(DEVICE)_$(NAME)_RB") {
+    field(DESC, "$(DESC)")
+    field(SCAN, "$(SCAN_SLOW)")
+    field(DTYP, "stream")
+    field(INP, "@rga_protocols.proto $(PROTONAME) $(PORT)") 
+}
