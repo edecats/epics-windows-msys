@@ -1,0 +1,61 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.exn_llli%s	s-exnllli.ads		2b145cda NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.big_numbers%s  a-nubinu.ads	a-nubinu.ali
+W system%s		system.ads		system.ali
+W system.exponn%s
+
+D ada.ads		20220819080952 76789da1 ada%s
+D a-numeri.ads		20220819080952 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20220819080952 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20220819080952 511b9bab ada.numerics.big_numbers.big_integers_ghost%s
+D a-nbnbig.adb		20220819080952 e7f9abf0 ada.numerics.big_numbers.big_integers_ghost%b
+D a-unccon.ads		20220819080952 0e9b276f ada.unchecked_conversion%s
+D system.ads		20220819080952 2ffa5114 system%s
+D s-exctab.ads		20220819080952 91bef6ef system.exception_table%s
+D s-exnllli.ads		20220819080952 f6a8e491 system.exn_llli%s
+D s-exponn.ads		20220819080952 f246e95f system.exponn%s
+D s-exponn.adb		20220819080952 0779c922 system.exponn%b
+D s-stalib.ads		20220819080952 1c9580f6 system.standard_library%s
+G a e
+G c Z s s [to_big_integer system__exn_llli__exponn_integer__signed_conversion 104 16 56_4_51_4]
+G c Z s s [from_big_integer system__exn_llli__exponn_integer__signed_conversion 108 16 56_4_51_4]
+G c Z s s [big system__exn_llli__exponn_integer 58 13 51_4]
+G c Z s s [in_int_range system__exn_llli__exponn_integer 62 13 51_4]
+G c Z s s [expon system__exn_llli__exponn_integer 66 13 51_4]
+G c Z s s [lemma_exp_expand system__exn_llli__exponn_integer 49 14 51_4]
+G c Z s s [lemma_exp_in_range system__exn_llli__exponn_integer 59 14 51_4]
+G c Z s s [lemma_exp_not_zero system__exn_llli__exponn_integer 65 14 51_4]
+G c Z s s [lemma_exp_positive system__exn_llli__exponn_integer 71 14 51_4]
+G c Z s s [lemma_mult_in_range system__exn_llli__exponn_integer 78 14 51_4]
+X 7 system.ads
+37K9*System 193e11 9|45r6 47r9 58r5
+X 9 s-exnllli.ads
+47K16*Exn_LLLI 7|37k9 9|58l12 58e20
+51K12*Exponn_Integer[10|41] 56r14
+53V13*Exn_Long_Long_Long_Integer=56:29{long_long_long_integer}
+54i7 Left{long_long_long_integer}
+54i38 Right{natural}
+X 10 s-exponn.ads
+41k16*Exponn 9|45w13 51r34 10|71e18
+66V13*Expon{long_long_long_integer} 9|56r29[51]
+

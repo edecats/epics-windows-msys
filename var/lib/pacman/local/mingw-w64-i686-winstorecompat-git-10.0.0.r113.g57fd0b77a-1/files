@@ -1,0 +1,6 @@
+%FILES%
+mingw32/
+mingw32/lib/
+mingw32/lib/libwindowsappcompat.a
+mingw32/lib/libwinstorecompat.a
+

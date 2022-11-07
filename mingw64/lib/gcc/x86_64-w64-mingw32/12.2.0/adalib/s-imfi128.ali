@@ -1,0 +1,89 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U system.img_fixed_128%s  s-imfi128.ads		a492df58 NE OL PU PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.arith_128%s	s-arit128.adb		s-arit128.ali
+Z system.exn_llli%s	s-exnllli.ads		s-exnllli.ali
+W system.image_f%s
+Z system.image_i%s
+Z system.img_util%s	s-imguti.adb		s-imguti.ali
+
+D ada.ads		20220819080952 76789da1 ada%s
+D a-numeri.ads		20220819080952 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20220819080952 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20220819080952 511b9bab ada.numerics.big_numbers.big_integers_ghost%s
+D a-unccon.ads		20220819080952 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20220819080952 edec285f interfaces%s
+D system.ads		20220819080952 2ffa5114 system%s
+D s-arit128.ads		20220819080952 239a85f5 system.arith_128%s
+D s-exctab.ads		20220819080952 91bef6ef system.exception_table%s
+D s-exnllli.ads		20220819080952 f6a8e491 system.exn_llli%s
+D s-exponn.ads		20220819080952 f246e95f system.exponn%s
+D s-imagef.ads		20220819080952 019cdf69 system.image_f%s
+D s-imagef.adb		20220819080952 b79d6f1f system.image_f%b
+D s-imagei.ads		20220819080952 0d3f86a7 system.image_i%s
+D s-imagei.adb		20220819080952 5fb230a8 system.image_i%b
+D s-imfi128.ads		20220819080952 4482fc8f system.img_fixed_128%s
+D s-imguti.ads		20220819080952 6b7a7f2f system.img_util%s
+D s-stalib.ads		20220819080952 1c9580f6 system.standard_library%s
+G a e
+G c Z s s [image_fixed system__img_fixed_128__impl 48 14 44_4]
+G c Z s s [set_image_fixed system__img_fixed_128__impl 67 14 44_4]
+G c Z s s [image_integer system__img_fixed_128__impl__image_i 43 14 57_4_44_4]
+G c Z s s [set_image_integer system__img_fixed_128__impl__image_i 51 14 57_4_44_4]
+G c Z s s [set_digits system__img_fixed_128__impl__image_i 36 14 57_4_44_4]
+X 6 interfac.ads
+38K9*Interfaces 231e15 16|35w6 42r22
+63I9*Integer_128<long_long_long_integer> 16|42r33
+X 7 system.ads
+37K9*System 193e11 16|36r6 37r6 39r9 69r5
+X 8 s-arit128.ads
+53K16*Arith_128 170e21 16|36w13 44r41
+59I12*Int128{6|63I9}
+92V13*Multiply_With_Ovflo_Check128{59I12} 96i<c,__gnat_mulv128>22
+117U14*Scaled_Divide128 16|44r51
+X 12 s-imagef.ads
+45k16*Image_F 88e19 16|37w13 44r24
+48U14*Image_Fixed 16|54r19[44]
+67U14*Set_Image_Fixed 16|67r19[44]
+X 16 s-imfi128.ads
+39K16*Img_Fixed_128 7|37k9 16|69l12 69e25
+42I12*Int128{6|63I9} 44r33 47r14 50r14 51r14 57r14 60r14 61r14
+44K12*Impl[12|45] 54r14 67r14
+46U14*Image_Fixed128=54:19
+47i7 V{6|63I9}
+48a7 S{string}
+49i7 P{natural}
+50i7 Num{6|63I9}
+51i7 Den{6|63I9}
+52i7 For0{natural}
+53i7 Aft0{natural}
+56U14*Set_Image_Fixed128=67:19
+57i7 V{6|63I9}
+58a7 S{string}
+59i7 P{natural}
+60i7 Num{6|63I9}
+61i7 Den{6|63I9}
+62i7 For0{natural}
+63i7 Aft0{natural}
+64i7 Fore{natural}
+65i7 Aft{natural}
+66i7 Exp{natural}
+

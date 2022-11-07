@@ -1,0 +1,94 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.exp_mod%b	s-expmod.adb		d48cb3fc NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.big_numbers%s  a-nubinu.ads	a-nubinu.ali
+W system%s		system.ads		system.ali
+N A254:13 codepeer false_positive "validity check" "confusion on generated code"
+
+U system.exp_mod%s	s-expmod.ads		b77f3f5f NE OL PU PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.big_numbers%s  a-nubinu.ads	a-nubinu.ali
+W system%s		system.ads		system.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20220819080952 76789da1 ada%s
+D a-numeri.ads		20220819080952 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20220819080952 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20220819080952 511b9bab ada.numerics.big_numbers.big_integers_ghost%s
+D a-nbnbig.adb		20220819080952 e7f9abf0 ada.numerics.big_numbers.big_integers_ghost%b
+D a-unccon.ads		20220819080952 0e9b276f ada.unchecked_conversion%s
+D system.ads		20220819080952 2ffa5114 system%s
+D s-exctab.ads		20220819080952 91bef6ef system.exception_table%s
+D s-expmod.ads		20220819080952 33b48ab9 system.exp_mod%s
+D s-expmod.adb		20220819080952 b623a2ee system.exp_mod%b
+D s-stalib.ads		20220819080952 1c9580f6 system.standard_library%s
+D s-unstyp.ads		20220819080952 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s s [to_big_integer system__exp_mod__unsigned_conversion 121 16 64_4]
+G c Z s s [from_big_integer system__exp_mod__unsigned_conversion 125 16 64_4]
+G c Z s s [big system__exp_mod 68 13 none]
+G c Z s b [exp_modular system__exp_mod 76 13 none]
+G c Z b b [lemma_add_mod system__exp_mod 53 14 none]
+G c Z b b [lemma_exp_expand system__exp_mod 58 14 none]
+G c Z b b [lemma_exp_mod system__exp_mod 67 14 none]
+G c Z b b [lemma_mod_ident system__exp_mod 73 14 none]
+G c Z b b [lemma_mod_mod system__exp_mod 79 14 none]
+G c Z b b [lemma_mult_div system__exp_mod 84 14 none]
+G c Z b b [lemma_mult_mod system__exp_mod 89 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 9|49r6 59r13 61r6 65r10 10|43r6 44r5
+X 2 a-numeri.ads
+16K13*Numerics 35e17 9|49r10 59r17 61r10 65r14 10|43r10 44r9
+X 3 a-nubinu.ads
+16K22*Big_Numbers 21e29 9|49r19 59r26 61r19 65r23 10|43r19 44r18
+X 7 system.ads
+37K9*System 193e11 9|51r6 53r9 56r13 57r24 84r5 10|46r14 49r8 318r5
+X 9 s-expmod.ads
+53K16*Exp_Mod 7|37k9 9|84l12 84e19 10|46b21 318l12 318t19
+57M12*Unsigned{12|44M9} 66r16 68r24 72r26 77r17 78r17 79r33 10|199r17 200r17
+. 201r33 203r16 204r16 207r29 207r46 208r10 225r36 231r36
+72M12*Power_Of_2{57M12} 81r51
+76V13*Exp_Modular{57M12} 77>7 78>7 79>7 82r19 10|198b13 316l8 316t19
+77m7 Left{57M12} 82r46 10|199b7 204r28 252r57 264r24 279r24 291r51 308r57
+. 311r45
+78m7 Modulus{57M12} 81r14 81r36 82r70 10|200b7 209r45 211r16 217r41 223r16
+. 237r22 250r45 267r40 272r52 273r63 276r40 292r67 302r46 303r49 304r61 306r37
+. 311r69
+79i7 Right{natural} 82r55 10|201b7 205r27 252r66 264r33 279r33 291r60 308r66
+. 311r54
+X 10 s-expmod.adb
+203m7 Result{9|57M12} 250r36 252r21 263r25 265r37 268r28 270m16 270r32 272r38
+. 274r37 278r24 291r21 303r35 304r34 305r34 308r21 311r30 314r14
+204m7 Factor{9|57M12} 252r36 260r24 261r26 261r41 263r40 263r56 265r52 266r40
+. 268r36 270r40 273r36 275r40 278r39 280r39 284r36 289r26 292r33 292r48 294r22
+. 294r37 296r22 296r37 298r25 298r33 300m13 300r29 300r37 305r48 308r36
+205i7 Exp{natural} 247r10 249r36 252r47 253r47 258r16 260r35 261r53 263r68
+. 266r52 273r48 275r52 278r51 280r48 281r31 281r42 284r45 286m13 286r20 287r23
+. 289r37 292r57 294r49 296r49 305r59 308r47
+207V16 Mult{9|57M12} 207>22 207>25 228s22 229s25 270s26 300s23
+207m22 X{9|57M12} 208r40
+207m25 Y{9|57M12} 208r65
+X 12 s-unstyp.ads
+38K16*Unsigned_Types 9|51w13 56r20 57r31 10|49r15 12|249e26
+44M9*Unsigned 9|56r35 57r46
+46M9*Long_Long_Unsigned 10|208r20 208r45 209r25
+

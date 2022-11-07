@@ -1,0 +1,62 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=i686
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_LONG_LONG_INTEGERS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.exp_lli%s	s-explli.ads		b7b91c92 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.big_numbers%s  a-nubinu.ads	a-nubinu.ali
+W system%s		system.ads		system.ali
+W system.expont%s
+
+D ada.ads		20220819080952 76789da1 ada%s
+D a-numeri.ads		20220819080952 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20220819080952 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20220819080952 511b9bab ada.numerics.big_numbers.big_integers_ghost%s
+D a-nbnbig.adb		20220819080952 e7f9abf0 ada.numerics.big_numbers.big_integers_ghost%b
+D a-unccon.ads		20220819080952 0e9b276f ada.unchecked_conversion%s
+D system.ads		20220819080952 2ffa5114 system%s
+D s-exctab.ads		20220819080952 91bef6ef system.exception_table%s
+D s-explli.ads		20220819080952 867f08b6 system.exp_lli%s
+D s-expont.ads		20220819080952 1e3c4530 system.expont%s
+D s-expont.adb		20220819080952 646292ac system.expont%b
+D s-stalib.ads		20220819080952 1c9580f6 system.standard_library%s
+G a e
+G c Z s s [to_big_integer system__exp_lli__expont_integer__signed_conversion 104 16 56_4_51_4]
+G c Z s s [from_big_integer system__exp_lli__expont_integer__signed_conversion 108 16 56_4_51_4]
+G c Z s s [big system__exp_lli__expont_integer 58 13 51_4]
+G c Z s s [in_int_range system__exp_lli__expont_integer 62 13 51_4]
+G c Z s s [expon system__exp_lli__expont_integer 66 13 51_4]
+G c Z s s [lemma_exp_expand system__exp_lli__expont_integer 49 14 51_4]
+G c Z s s [lemma_exp_in_range system__exp_lli__expont_integer 59 14 51_4]
+G c Z s s [lemma_exp_not_zero system__exp_lli__expont_integer 65 14 51_4]
+G c Z s s [lemma_exp_positive system__exp_lli__expont_integer 71 14 51_4]
+G c Z s s [lemma_mult_in_range system__exp_lli__expont_integer 78 14 51_4]
+X 7 system.ads
+37K9*System 193e11 9|45r6 47r9 57r5
+X 9 s-explli.ads
+47K16*Exp_LLI 7|37k9 9|57l12 57e19
+51K12*Expont_Integer[10|41] 55r14
+53V13*Exp_Long_Long_Integer=55:29{long_long_integer}
+54i7 Left{long_long_integer}
+54i33 Right{natural}
+X 10 s-expont.ads
+41k16*Expont 9|45w13 51r34 10|71e18
+66V13*Expon{long_long_integer} 9|55r29[51]
+

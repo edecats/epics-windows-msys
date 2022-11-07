@@ -1,0 +1,79 @@
+************************************* Invoked: Mon Oct 24 16:19:19 2022
+[0] Arguments: C:\Users\Eloise\Downloads\msys2-x86_64-20220904.exe
+[5] Operations sanity check succeeded.
+[7] Language: en-US
+[8] Warning: QMimeDatabase: Error loading internal MIME data
+An error has been encountered at line 1 of <internal MIME data>: Premature end of document.:
+[587] Loaded control script ":/metadata/installer-config/control_js.js"
+[587] Using control script: ":/metadata/installer-config/control_js.js"
+[2205] Preparing meta information download...
+[4768] backup  operation: Mkdir
+[4768] 	- arguments: C:/msys64
+[4768] Done
+[4768] perform  operation: Mkdir
+[4768] 	- arguments: C:/msys64
+[4769] Done
+[4769] Preparing the installation...
+[4769] Install size: 2 components
+[4783] Installing component MSYS2 base
+[4783] backup com.msys2.root.base operation: Extract
+[4783] 	- arguments: installer://com.msys2.root.base/20220904msys64.7z, C:/msys64
+[4783] Done
+[4784] perform com.msys2.root.base operation: Extract
+[4784] 	- arguments: installer://com.msys2.root.base/20220904msys64.7z, C:/msys64
+[17316] Done
+[17316] backup com.msys2.root.base operation: CreateShortcut
+[17316] 	- arguments: C:/msys64/mingw32.exe, C:\Users\Eloise\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSYS2/MSYS2 MINGW32.lnk, iconPath=C:/msys64/mingw32.exe
+[17316] Done
+[17316] perform com.msys2.root.base operation: CreateShortcut
+[17316] 	- arguments: C:/msys64/mingw32.exe, C:\Users\Eloise\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSYS2/MSYS2 MINGW32.lnk
+[17336] Done
+[17336] backup com.msys2.root.base operation: CreateShortcut
+[17336] 	- arguments: C:/msys64/mingw64.exe, C:\Users\Eloise\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSYS2/MSYS2 MINGW64.lnk, iconPath=C:/msys64/mingw64.exe
+[17336] Done
+[17336] perform com.msys2.root.base operation: CreateShortcut
+[17336] 	- arguments: C:/msys64/mingw64.exe, C:\Users\Eloise\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSYS2/MSYS2 MINGW64.lnk
+[17344] Done
+[17344] backup com.msys2.root.base operation: CreateShortcut
+[17344] 	- arguments: C:/msys64/ucrt64.exe, C:\Users\Eloise\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSYS2/MSYS2 UCRT64.lnk, iconPath=C:/msys64/ucrt64.exe
+[17345] Done
+[17345] perform com.msys2.root.base operation: CreateShortcut
+[17345] 	- arguments: C:/msys64/ucrt64.exe, C:\Users\Eloise\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSYS2/MSYS2 UCRT64.lnk
+[17353] Done
+[17353] backup com.msys2.root.base operation: CreateShortcut
+[17353] 	- arguments: C:/msys64/clang64.exe, C:\Users\Eloise\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSYS2/MSYS2 CLANG64.lnk, iconPath=C:/msys64/clang64.exe
+[17353] Done
+[17353] perform com.msys2.root.base operation: CreateShortcut
+[17353] 	- arguments: C:/msys64/clang64.exe, C:\Users\Eloise\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSYS2/MSYS2 CLANG64.lnk
+[17362] Done
+[17362] backup com.msys2.root.base operation: CreateShortcut
+[17362] 	- arguments: C:/msys64/msys2.exe, C:\Users\Eloise\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSYS2/MSYS2 MSYS.lnk, iconPath=C:/msys64/msys2.exe
+[17362] Done
+[17362] perform com.msys2.root.base operation: CreateShortcut
+[17362] 	- arguments: C:/msys64/msys2.exe, C:\Users\Eloise\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MSYS2/MSYS2 MSYS.lnk
+[17370] Done
+[17370] backup com.msys2.root.base operation: Execute
+[17370] 	- arguments: C:/msys64\usr\bin\bash.exe, --login, -c, exit
+[17370] Done
+[17370] perform com.msys2.root.base operation: Execute
+[17370] 	- arguments: C:/msys64\usr\bin\bash.exe, --login, -c, exit
+[17389] C:/msys64\\usr\\bin\\bash.exe" started, arguments: "--login -c exit
+[18020] Copying skeleton files.\nThese files are for the users to personalise their msys2 experience.\n\nThey will never be overwritten nor automatically updated.\n\n'./.bashrc' -> '/home/Eloise/.bashrc'\n'./.bash_logout' -> '/home/Eloise/.bash_logout'\n'./.bash_profile' -> '/home/Eloise/.bash_profile'\n'./.inputrc' -> '/home/Eloise/.inputrc'\n'./.profile' -> '/home/Eloise/.profile'\n
+[18092] 'C:\\Windows\\system32\\drivers\\etc\\hosts' -> '/etc/hosts'\n
+[18123] 'C:\\Windows\\system32\\drivers\\etc\\protocol' -> '/etc/protocols'\n
+[18154] 'C:\\Windows\\system32\\drivers\\etc\\services' -> '/etc/services'\n
+[18225] 'C:\\Windows\\system32\\drivers\\etc\\networks' -> '/etc/networks'\n
+[18920] ==> Generating pacman master key. This may take some time.\n
+[22055] ==> Updating trust database...\n==> Appending keys from msys2.gpg...\n
+[22686] ==> Locally signing trusted keys in keyring...\n
+[23318]   -> Locally signed 5 keys.\n==> Importing owner trust values...\n==> Disabling revoked keys in keyring...\n
+[23349]   -> Disabled 4 keys.\n
+[23381] ==> Updating trust database...\n
+[40050] \x1B[H\x1B[2J\x1B[3J\n\n###################################################################\n#                                                                 #\n#                                                                 #\n#                   C   A   U   T   I   O   N                     #\n#                                                                 #\n#                  This is first start of MSYS2.                  #\n#       You MUST restart shell to apply necessary actions.        #\n#                                                                 #\n#                                                                 #\n###################################################################\n\n\n\x1B[H\x1B[2J\x1B[3J
+[40050] Done
+[40071] Writing maintenance tool: "C:/msys64/uninstall.exe.new"
+[40071] Writing maintenance tool.
+[40390] Wrote permissions for maintenance tool.
+[40423] Maintenance tool hard restart: false.
+[40431] Installation finished!
+[66528] starting "C:/msys64/mingw64.exe" ()

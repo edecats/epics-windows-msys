@@ -1,0 +1,61 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.width_u%b	s-widthu.adb		2fada95a NE OL SU GE
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.big_numbers%s  a-nubinu.ads	a-nubinu.ali
+W system%s		system.ads		system.ali
+
+U system.width_u%s	s-widthu.ads		b6f77f97 BN NE OL GE
+W system%s		system.ads		system.ali
+
+D ada.ads		20220819080952 76789da1 ada%s
+D a-numeri.ads		20220819080952 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20220819080952 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20220819080952 511b9bab ada.numerics.big_numbers.big_integers_ghost%s
+D a-nbnbig.adb		20220819080952 e7f9abf0 ada.numerics.big_numbers.big_integers_ghost%b
+D a-unccon.ads		20220819080952 0e9b276f ada.unchecked_conversion%s
+D system.ads		20220819080952 2ffa5114 system%s
+D s-exctab.ads		20220819080952 91bef6ef system.exception_table%s
+D s-stalib.ads		20220819080952 1c9580f6 system.standard_library%s
+D s-widthu.ads		20220819080952 990d2e83 system.width_u%s
+D s-widthu.adb		20220819080952 e7bb1c72 system.width_u%b
+G a e
+G c Z s b [width_u system 39 17 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|32r6 33r5
+X 2 a-numeri.ads
+16K13*Numerics 35e17 11|32r10 33r9
+X 3 a-nubinu.ads
+16K22*Big_Numbers 21e29 11|32r19 33r18
+X 7 system.ads
+37K9*System 193e11 10|39r10 42r14 44r14 11|35r10 185r5
+X 10 s-widthu.ads
+37M9 Uns 39r35 11|35r35 49r68 51r24 56r12 75r44 96r44 120r8 128r22 128r29
+. 143r12
+39v17*Width_U 7|37k9 10|39>26 39>30 42r21 44r21 11|35b17 185l12 185t19
+39*26 Lo{37M9} 41r15 11|35b26 128r38 133r7 143r21 179r27
+39*30 Hi{37M9} 41r20 11|35b30 128r42 133r12 143r25 180r27
+X 11 s-widthu.adb
+119i4 W{natural} 139m7 149r52 152m10 152r15 155r33 156r50 162r49 171r49 179r44
+. 180r44 182r14
+120*4 T{10|37M9} 143m7 147r13 148r33 151m10 151r15 157r38 158r44
+147l21 loop 159e15
+161q7 declare 172e10
+

@@ -1,0 +1,62 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=i686
+P ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+
+U system.fore_fixed_32%s  s-fofi32.ads		6c8f3188 NE OL PU PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.arith_32%s	s-arit32.adb		s-arit32.ali
+Z system.exn_int%s	s-exnint.ads		s-exnint.ali
+W system.fore_f%s
+
+D ada.ads		20220819080952 76789da1 ada%s
+D a-numeri.ads		20220819080952 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20220819080952 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20220819080952 511b9bab ada.numerics.big_numbers.big_integers_ghost%s
+D a-unccon.ads		20220819080952 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20220819080952 edec285f interfaces%s
+D system.ads		20220819080952 2ffa5114 system%s
+D s-arit32.ads		20220819080952 e8522a76 system.arith_32%s
+D s-exctab.ads		20220819080952 91bef6ef system.exception_table%s
+D s-exnint.ads		20220819080952 3d33a4e5 system.exn_int%s
+D s-exponn.ads		20220819080952 f246e95f system.exponn%s
+D s-fore_f.ads		20220819080952 5b88f089 system.fore_f%s
+D s-fore_f.adb		20220819080952 1df060cf system.fore_f%b
+D s-fofi32.ads		20220819080952 1d43923c system.fore_fixed_32%s
+D s-stalib.ads		20220819080952 1c9580f6 system.standard_library%s
+G a e
+G c Z s s [fore_fixed system__fore_fixed_32__impl 47 13 44_4]
+X 6 interfac.ads
+38K9*Interfaces 231e15 14|35w6 42r21
+52I9*Integer_32<integer> 14|42r32
+X 7 system.ads
+37K9*System 193e11 14|36r6 37r6 39r9 50r5
+X 8 s-arit32.ads
+50K16*Arith_32 117e20 14|36w13 44r39
+91U14*Scaled_Divide32 14|44r48
+X 12 s-fore_f.ads
+44k16*Fore_F 54e18 14|37w13 44r24
+47V13*Fore_Fixed{natural} 14|48r19[44]
+X 14 s-fofi32.ads
+39K16*Fore_Fixed_32 7|37k9 14|50l12 50e25
+42I12*Int32{6|52I9} 44r32 47r26
+44K12*Impl[12|44] 48r14
+46V13*Fore_Fixed32=48:19{natural}
+47i7 Lo{6|52I9}
+47i11 Hi{6|52I9}
+47i15 Num{6|52I9}
+47i20 Den{6|52I9}
+47i33 Scale{integer}
+

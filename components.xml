@@ -1,0 +1,26 @@
+<Packages>
+    <ApplicationName>MSYS2</ApplicationName>
+    <ApplicationVersion>1.0.0</ApplicationVersion>
+    <Package>
+        <Name>com.msys2.root</Name>
+        <Title>MSYS2</Title>
+        <Description>Cygwin-derived Posix-like env. for Windows with Arch Linux's Pacman</Description>
+        <TreeName moveChildren="false"></TreeName>
+        <Version>20220904</Version>
+        <LastUpdateDate></LastUpdateDate>
+        <InstallDate>2022-10-24</InstallDate>
+        <Size>0</Size>
+        <Checkable>true</Checkable>
+    </Package>
+    <Package>
+        <Name>com.msys2.root.base</Name>
+        <Title>MSYS2 base</Title>
+        <Description>Cygwin-derived Posix-like env. for Windows with Arch Linux's Pacman</Description>
+        <TreeName moveChildren="false"></TreeName>
+        <Version>20220904</Version>
+        <LastUpdateDate></LastUpdateDate>
+        <InstallDate>2022-10-24</InstallDate>
+        <Size>289197410</Size>
+        <Checkable>true</Checkable>
+    </Package>
+</Packages>

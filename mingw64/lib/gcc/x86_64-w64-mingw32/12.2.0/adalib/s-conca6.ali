@@ -1,0 +1,62 @@
+V "GNAT Lib v12"
+A -nostdinc
+A -O2
+A -Wextra
+A -Wall
+A -gnatwa
+A -g
+A -gnatp
+A -gnatg
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U system.concat_6%b	s-conca6.adb		09a16720 NE OL PK
+W system%s		system.ads		system.ali
+W system.concat_5%s	s-conca5.adb		s-conca5.ali
+
+U system.concat_6%s	s-conca6.ads		e8dcb3fc NE OL PK
+W system%s		system.ads		system.ali
+
+D system.ads		20220819080952 2ffa5114 system%s
+D s-conca5.ads		20220819080952 47259367 system.concat_5%s
+D s-conca6.ads		20220819080952 c726e2e8 system.concat_6%s
+D s-conca6.adb		20220819080952 89a216af system.concat_6%b
+G a e
+G c Z s b [str_concat_6 system__concat_6 37 14 none]
+G c Z s b [str_concat_bounds_6 system__concat_6 44 14 none]
+X 1 system.ads
+37K9*System 193e11 3|35r9 50r5 4|32r6 34r14 80r7 88r5
+X 2 s-conca5.ads
+35K16*Concat_5 50e20 4|32w13 80r14
+44U14*Str_Concat_Bounds_5 4|80s23
+X 3 s-conca6.ads
+35K16*Concat_6 1|37k9 3|50l12 50e20 4|34b21 88l12 88t20
+37U14*Str_Concat_6 37<28 37>44 37>48 37>52 37>56 37>60 37>64 4|42b14 69l8
+. 69t20
+37a28 R{string} 4|42b28 46r12 48m7 52m7 56m7 60m7 64m7 67r12 68m7
+37a44 S1{string} 4|42b44 47r16 48r21
+37a48 S2{string} 4|42b48 51r16 52r21
+37a52 S3{string} 4|42b52 55r16 56r21
+37a56 S4{string} 4|42b56 59r16 60r21
+37a60 S5{string} 4|42b60 63r16 64r21
+37a64 S6{string} 4|42b64 68r21
+44U14*Str_Concat_Bounds_6 45<7 45<11 46>7 46>11 46>15 46>19 46>23 46>27 4|75b14
+. 86l8 86t27
+45i7 Lo{natural} 4|76b7 80m44 83r31 84m10
+45i11 Hi{natural} 4|76b11 80m48 83m10 83r26
+46a7 S1{string} 4|77b7 82r10 83r16 84r16
+46a11 S2{string} 4|77b11 80r52
+46a15 S3{string} 4|77b15 80r56
+46a19 S4{string} 4|77b19 80r60
+46a23 S5{string} 4|77b23 80r64
+46a27 S6{string} 4|77b27 80r68
+X 4 s-conca6.adb
+43i7 F{natural} 46m7 47r12 48r10 50m7 51r12 52r10 54m7 55r12 56r10 58m7 59r12
+. 60r10 62m7 63r12 64r10 66m7 68r10
+43i10 L{natural} 47m7 48r15 50r12 51m7 52r15 54r12 55m7 56r15 58r12 59m7
+. 60r15 62r12 63m7 64r15 66r12 67m7 68r15
+

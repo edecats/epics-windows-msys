@@ -1,0 +1,7 @@
+/* Generated file, do not edit! */
+
+/* Version determined from build date/time */
+
+#ifndef EPICS_VCS_VERSION
+  #define EPICS_VCS_VERSION "2022-10-25T12:19-0700"
+#endif
