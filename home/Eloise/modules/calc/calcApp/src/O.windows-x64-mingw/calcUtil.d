@@ -1,0 +1,1 @@
+calcUtil.obj: ../calcUtil.c

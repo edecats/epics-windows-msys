@@ -1,0 +1,3 @@
+epicsEnvSet("IOC","ioctestEpics")
+epicsEnvSet("TOP","/home/Eloise/modules/asyn")
+epicsEnvSet("EPICS_BASE","/home/Eloise/base")

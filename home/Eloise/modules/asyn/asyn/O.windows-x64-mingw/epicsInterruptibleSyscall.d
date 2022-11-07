@@ -1,0 +1,19 @@
+epicsInterruptibleSyscall.obj: \
+ ../../asyn/asynDriver/epicsInterruptibleSyscall.c \
+ C:/msys64/home/Eloise/base/include/os/WIN32/osiUnistd.h \
+ C:/msys64/home/Eloise/base/include/osiSock.h \
+ C:/msys64/home/Eloise/base/include/libComAPI.h \
+ C:/msys64/home/Eloise/base/include/os/WIN32/osdSock.h \
+ C:/msys64/home/Eloise/base/include/ellLib.h \
+ ../../asyn/asynDriver/epicsInterruptibleSyscall.h \
+ C:/msys64/home/Eloise/base/include/epicsThread.h \
+ C:/msys64/home/Eloise/base/include/os/WIN32/osdThread.h \
+ C:/msys64/home/Eloise/base/include/cantProceed.h \
+ C:/msys64/home/Eloise/base/include/compilerDependencies.h \
+ C:/msys64/home/Eloise/base/include/compiler/gcc/compilerSpecific.h \
+ C:/msys64/home/Eloise/base/include/errlog.h \
+ C:/msys64/home/Eloise/base/include/epicsAssert.h \
+ C:/msys64/home/Eloise/base/include/epicsSignal.h \
+ C:/msys64/home/Eloise/base/include/epicsMutex.h \
+ C:/msys64/home/Eloise/base/include/epicsAssert.h \
+ C:/msys64/home/Eloise/base/include/os/WIN32/osdMutex.h

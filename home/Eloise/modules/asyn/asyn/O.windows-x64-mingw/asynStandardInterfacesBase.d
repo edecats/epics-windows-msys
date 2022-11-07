@@ -1,0 +1,30 @@
+asynStandardInterfacesBase.obj: \
+ ../../asyn/interfaces/asynStandardInterfacesBase.c \
+ C:/msys64/home/Eloise/base/include/epicsTypes.h \
+ C:/msys64/home/Eloise/base/include/libComAPI.h \
+ C:/msys64/home/Eloise/base/include/compilerDependencies.h \
+ C:/msys64/home/Eloise/base/include/compiler/gcc/compilerSpecific.h \
+ C:/msys64/home/Eloise/base/include/cantProceed.h \
+ ../../asyn/asynDriver/asynDriver.h \
+ C:/msys64/home/Eloise/base/include/epicsStdio.h \
+ C:/msys64/home/Eloise/base/include/epicsTempFile.h \
+ C:/msys64/home/Eloise/base/include/epicsTime.h \
+ C:/msys64/home/Eloise/base/include/epicsTypes.h \
+ C:/msys64/home/Eloise/base/include/os/WIN32/osdTime.h \
+ C:/msys64/home/Eloise/base/include/errMdef.h \
+ C:/msys64/home/Eloise/base/include/ellLib.h \
+ C:/msys64/home/Eloise/base/include/epicsVersion.h \
+ ../../asyn/asynDriver/asynAPI.h \
+ ../../asyn/interfaces/asynStandardInterfaces.h \
+ ../../asyn/interfaces/asynUInt32Digital.h \
+ ../../asyn/interfaces/asynInt32.h ../../asyn/interfaces/asynInt64.h \
+ ../../asyn/interfaces/asynInt8Array.h \
+ ../../asyn/interfaces/asynInt16Array.h \
+ ../../asyn/interfaces/asynInt32Array.h \
+ ../../asyn/interfaces/asynInt64Array.h \
+ ../../asyn/interfaces/asynFloat32Array.h \
+ ../../asyn/interfaces/asynFloat64.h \
+ ../../asyn/interfaces/asynFloat64Array.h \
+ ../../asyn/interfaces/asynGenericPointer.h \
+ ../../asyn/interfaces/asynEnum.h ../../asyn/interfaces/asynOctet.h \
+ ../../asyn/interfaces/asynDrvUser.h ../../asyn/interfaces/asynOption.h

@@ -1,0 +1,27 @@
+testConnect_registerRecordDeviceDriver.obj: \
+ testConnect_registerRecordDeviceDriver.cpp \
+ C:/msys64/home/Eloise/base/include/compilerDependencies.h \
+ C:/msys64/home/Eloise/base/include/compiler/gcc/compilerSpecific.h \
+ C:/msys64/home/Eloise/base/include/epicsStdlib.h \
+ C:/msys64/home/Eloise/base/include/libComAPI.h \
+ C:/msys64/home/Eloise/base/include/os/WIN32/osdStrtod.h \
+ C:/msys64/home/Eloise/base/include/epicsTypes.h \
+ C:/msys64/home/Eloise/base/include/compilerDependencies.h \
+ C:/msys64/home/Eloise/base/include/errMdef.h \
+ C:/msys64/home/Eloise/base/include/iocsh.h \
+ C:/msys64/home/Eloise/base/include/iocshRegisterCommon.h \
+ C:/msys64/home/Eloise/base/include/shareLib.h \
+ C:/msys64/home/Eloise/base/include/registryCommon.h \
+ C:/msys64/home/Eloise/base/include/dbStaticLib.h \
+ C:/msys64/home/Eloise/base/include/dbFldTypes.h \
+ C:/msys64/home/Eloise/base/include/dbBase.h \
+ C:/msys64/home/Eloise/base/include/ellLib.h \
+ C:/msys64/home/Eloise/base/include/dbDefs.h \
+ C:/msys64/home/Eloise/base/include/recSup.h \
+ C:/msys64/home/Eloise/base/include/devSup.h \
+ C:/msys64/home/Eloise/base/include/link.h \
+ C:/msys64/home/Eloise/base/include/cantProceed.h \
+ C:/msys64/home/Eloise/base/include/dbJLink.h \
+ C:/msys64/home/Eloise/base/include/dbCoreAPI.h \
+ C:/msys64/home/Eloise/base/include/registryRecordType.h \
+ C:/msys64/home/Eloise/base/include/recSup.h

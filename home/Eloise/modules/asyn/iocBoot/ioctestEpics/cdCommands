@@ -1,0 +1,8 @@
+startup = "/home/Eloise/modules/asyn/iocBoot/ioctestEpics"
+putenv("IOC=ioctestEpics")
+top = "/home/Eloise/modules/asyn"
+putenv("TOP=/home/Eloise/modules/asyn")
+topbin = "/home/Eloise/modules/asyn/bin/windows-x64-mingw"
+epics_base = "/home/Eloise/base"
+putenv("EPICS_BASE=/home/Eloise/base")
+epics_basebin = "/home/Eloise/base/bin/windows-x64-mingw"
